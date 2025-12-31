@@ -1,6 +1,6 @@
 const SoulAssemblyLogo = () => {
   return (
-    <div className="logo-animate flex flex-col items-center justify-center">
+    <div className="logo-animate flex flex-col items-center justify-center relative z-[200]">
       <div className="relative">
         {/* Main Logo Text */}
         <h1 className="font-display text-[8vw] md:text-[10vw] lg:text-[12vw] font-bold tracking-tighter leading-[0.85] text-foreground">
