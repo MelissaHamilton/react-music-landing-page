@@ -17,7 +17,7 @@ const ScrollIndicator = () => {
           </defs>
           <text className="text-[7px] fill-foreground uppercase" style={{ letterSpacing: '0.15em' }}>
             <textPath href="#circlePath">
-              EXPLORE TO SCROLL · EXPLORE TO SCROLL ·
+              EXPLORE TO SCROLL · EXPLORE TO SCROLL · EXPLORE TO SCROLL ·
             </textPath>
           </text>
         </svg>
