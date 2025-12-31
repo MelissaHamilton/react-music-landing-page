@@ -89,11 +89,22 @@ export default {
             transform: "scale(1.05)"
           },
         },
+        "squiggle": {
+          "0%, 100%": {
+            transform: "translateX(0) scaleY(1)",
+            opacity: "0.8",
+          },
+          "50%": {
+            transform: "translateX(3px) scaleY(1.1)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
+        "squiggle": "squiggle 2s ease-in-out infinite",
       },
     },
   },
