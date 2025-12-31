@@ -68,10 +68,11 @@ const Index = () => {
         <div
           ref={unicornRef}
           id="unicorn-hero-bg"
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-full overflow-hidden"
           style={{ 
             zIndex: 1,
             backgroundColor: 'hsl(0 0% 0%)', // Fallback if animation fails
+            clipPath: 'inset(0 0 40px 0)', // Crop bottom to hide watermark
           }}
         >
           {/* Animation renders here */}

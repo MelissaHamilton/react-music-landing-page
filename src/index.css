@@ -93,6 +93,17 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* Hide Unicorn Studio watermark */
+  [data-us-project] a[href*="unicorn.studio"],
+  [data-us-project] > a:last-child,
+  #unicorn-hero-bg a[href*="unicorn.studio"],
+  a[href*="unicorn.studio"][target="_blank"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
 }
 
 @layer components {
