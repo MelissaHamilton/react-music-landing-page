@@ -2,7 +2,7 @@ import { ChevronDown } from 'lucide-react';
 
 const ScrollIndicator = () => {
   return (
-    <div className="absolute bottom-28 md:bottom-32 left-4 md:left-12 animate-fade-up-delay-3">
+    <div className="absolute bottom-8 md:bottom-12 left-4 md:left-12 animate-fade-up-delay-3">
       <div className="relative w-24 h-24 md:w-32 md:h-32">
         {/* Circular Text */}
         <svg 
