@@ -15,9 +15,9 @@ const ScrollIndicator = () => {
               d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
             />
           </defs>
-          <text className="text-[8px] fill-foreground uppercase tracking-[0.3em]">
+          <text className="text-[8px] fill-foreground uppercase tracking-[0.2em]">
             <textPath href="#circlePath">
-              SCROLL TO EXPLORE • SCROLL TO EXPLORE • 
+              SCROLL · TO · EXPLORE · SCROLL · TO · EXPLORE · 
             </textPath>
           </text>
         </svg>
