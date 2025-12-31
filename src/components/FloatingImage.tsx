@@ -32,17 +32,32 @@ const FloatingImage = ({ src, alt, caption, position, className = '' }: Floating
             />
           </div>
           
-          {/* Squiggle Decoration */}
+          {/* Animated Orange Squiggle Decoration */}
           {position === 'left' && (
             <svg 
-              className="absolute -bottom-8 -left-4 w-16 h-16 text-secondary opacity-80"
+              className="absolute -bottom-8 -left-4 w-20 h-20"
               viewBox="0 0 100 100"
               fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="2.5"
+              strokeLinecap="round"
             >
-              <path d="M10,50 Q25,20 40,50 T70,50 T100,50" strokeLinecap="round" />
-              <path d="M10,60 Q25,30 40,60 T70,60 T100,60" strokeLinecap="round" />
+              <path 
+                d="M10,40 Q25,10 40,40 T70,40 T100,40" 
+                stroke="hsl(15 100% 62%)"
+                className="animate-squiggle"
+              />
+              <path 
+                d="M5,55 Q20,25 35,55 T65,55 T95,55" 
+                stroke="hsl(15 100% 62%)"
+                className="animate-squiggle"
+                style={{ animationDelay: '0.3s' }}
+              />
+              <path 
+                d="M15,70 Q30,40 45,70 T75,70 T105,70" 
+                stroke="hsl(15 100% 62%)"
+                className="animate-squiggle"
+                style={{ animationDelay: '0.6s' }}
+              />
             </svg>
           )}
         </div>
