@@ -1,0 +1,23 @@
+const SoulAssemblyLogo = () => {
+  return (
+    <div className="logo-animate flex flex-col items-center justify-center">
+      <div className="relative">
+        {/* Main Logo Text */}
+        <h1 className="font-display text-[8vw] md:text-[10vw] lg:text-[12vw] font-bold tracking-tighter leading-[0.85] text-foreground">
+          <span className="block">Soul</span>
+          <span className="block">Assembly</span>
+        </h1>
+        
+        {/* Registered Trademark Symbol */}
+        <span className="absolute -top-2 -right-8 md:-right-12 text-foreground text-2xl md:text-4xl font-light">
+          ®
+        </span>
+        
+        {/* Decorative Circle */}
+        <div className="absolute -bottom-4 right-8 md:right-16 w-6 h-6 md:w-8 md:h-8 rounded-full border-2 border-foreground opacity-60" />
+      </div>
+    </div>
+  );
+};
+
+export default SoulAssemblyLogo;
