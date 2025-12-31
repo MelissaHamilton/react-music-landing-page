@@ -71,12 +71,21 @@ const Index = () => {
           className="absolute inset-0 w-full h-full overflow-hidden"
           style={{ 
             zIndex: 1,
-            backgroundColor: 'hsl(0 0% 0%)', // Fallback if animation fails
-            clipPath: 'inset(0 0 40px 0)', // Crop bottom to hide watermark
+            backgroundColor: 'hsl(0 0% 0%)',
+            clipPath: 'inset(0 0 40px 0)',
           }}
         >
           {/* Animation renders here */}
         </div>
+        
+        {/* Tint overlay to push animation back in depth */}
+        <div 
+          className="absolute inset-0 pointer-events-none"
+          style={{ 
+            zIndex: 1,
+            background: 'linear-gradient(to bottom, hsl(0 0% 0% / 0.35), hsl(0 0% 0% / 0.5))',
+          }}
+        />
 
         {/* Grid Background - sits on top of Unicorn but behind content */}
         <div style={{ position: 'relative', zIndex: 2 }}>
