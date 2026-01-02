@@ -1,73 +1,73 @@
-# Welcome to your Lovable project
+# react-music-landing-page
+# Soul Assembly
 
-## Project info
+A modern, visually stunning landing page for bands and live acts looking to book shows. Built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+![Soul Assembly Hero](assets/preview.png)
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Immersive Hero Section** - Full-screen hero with interactive Unicorn Studio background animation
+- **Glassmorphism Navigation** - Modern frosted glass navbar with smooth hover effects
+- **Dynamic Image Gallery** - Floating artist images with subtle parallax effects
+- **Responsive Design** - Fully optimized for desktop, tablet, and mobile devices
+- **Animated UI Elements** - Scroll indicator, image stacks, and smooth fade-in animations
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Framework:** React 18
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui + Radix UI
+- **Language:** TypeScript
+- **Animations:** Unicorn Studio, CSS Animations
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js 18+ 
+- npm, yarn, or bun
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+```
+# Clone the repository
+git clone https://github.com/yourusername/soul-assembly.git
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Navigate to the project directory
+cd soul-assembly
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+    src/
+    ├── components/     # Reusable UI components
+    │   └── ui/         # shadcn/ui components
+    ├── pages/          # Route pages
+    ├── hooks/          # Custom React hooks
+    ├── lib/            # Utility functions
+    └── assets/         # Images and static files
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Customization
+**Colors & Theme** - 
+Edit src/index.css to customize the color palette and CSS variables.
 
-## What technologies are used for this project?
+**Background Animation** - 
+The interactive background uses Unicorn Studio. Update the projectId in src/pages/Index.tsx to use your own animation.
 
-This project is built with:
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Acknowledgments
+**shadcn/ui** for cool UI components<br>
+**Unicorn Studio** for interactive WebGL animations<br>
+**Lucide Icons** for elegant icons
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
