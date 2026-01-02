@@ -18,7 +18,7 @@ const GlassNavbar = () => {
                   <Menu className="w-5 h-5" />
                 </button>
               </SheetTrigger>
-              <SheetContent side="bottom" className="glass border-t border-border/20 rounded-t-3xl z-[300]">
+              <SheetContent side="bottom" className="bg-background/95 backdrop-blur-xl border-t border-border/20 rounded-t-3xl z-[300]">
                 <div className="flex flex-col items-center gap-4 py-6">
                   {navItems.map((item, index) => (
                     <a
