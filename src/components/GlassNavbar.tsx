@@ -8,7 +8,7 @@ const GlassNavbar = () => {
 
   return (
     <nav className="fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-50 animate-fade-up-delay-2 w-auto max-w-[calc(100%-2rem)]">
-      <div className="glass rounded-full px-3 sm:px-4 md:px-6 lg:px-8 py-3 md:py-4 overflow-hidden">
+      <div className="glass rounded-full px-4 sm:px-5 md:px-6 lg:px-8 py-3 md:py-4">
         <div className="flex items-center gap-2 sm:gap-3 md:gap-4 lg:gap-8">
           {/* Mobile Menu with Sheet */}
           <div className="sm:hidden">
