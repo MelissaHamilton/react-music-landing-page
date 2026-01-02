@@ -6,9 +6,6 @@ interface ImageStackProps {
 const ImageStack = ({ src, alt }: ImageStackProps) => {
   return (
     <div className="absolute bottom-36 md:bottom-44 left-1/2 -translate-x-1/2 z-20 animate-fade-up-delay-1">
-      {/* Caption */}
-      <p className="text-sm text-muted-foreground mb-4 text-center tracking-wide">(Body Text)</p>
-      
       {/* Stacked Images Effect */}
       <div className="relative perspective-1000">
         {/* Background layers for stack effect */}
