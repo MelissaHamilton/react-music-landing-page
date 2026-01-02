@@ -7,9 +7,6 @@ const SoulAssemblyLogo = () => {
           <span className="block">Soul</span>
           <span className="block">Assembly</span>
         </h1>
-        
-        {/* Decorative Circle */}
-        <div className="absolute -bottom-4 right-8 md:right-16 w-6 h-6 md:w-8 md:h-8 rounded-full border-2 border-foreground opacity-60" />
       </div>
     </div>
   );
