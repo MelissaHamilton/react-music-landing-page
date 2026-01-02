@@ -7,9 +7,9 @@ const GlassNavbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-50 animate-fade-up-delay-2">
-      <div className="glass rounded-full px-4 md:px-8 py-3 md:py-4">
-        <div className="flex items-center gap-4 md:gap-8">
+    <nav className="fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-50 animate-fade-up-delay-2 w-[calc(100%-2rem)] sm:w-auto max-w-[calc(100%-2rem)]">
+      <div className="glass rounded-full px-4 md:px-6 lg:px-8 py-3 md:py-4">
+        <div className="flex items-center gap-3 sm:gap-3 md:gap-4 lg:gap-8">
           {/* Mobile Menu with Sheet */}
           <div className="sm:hidden">
             <Sheet open={open} onOpenChange={setOpen}>
@@ -48,12 +48,12 @@ const GlassNavbar = () => {
           </a>
           
           {/* Nav Links - Hidden on mobile, shown on tablet+ */}
-          <div className="hidden sm:flex items-center gap-3 md:gap-6">
+          <div className="hidden sm:flex items-center gap-2 md:gap-4 lg:gap-6">
             {navItems.map((item, index) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className={`text-xs md:text-base font-medium transition-colors link-hover whitespace-nowrap ${
+                className={`text-xs md:text-sm lg:text-base font-medium transition-colors link-hover whitespace-nowrap ${
                   index === 0 ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
