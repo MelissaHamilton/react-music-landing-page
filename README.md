@@ -3,7 +3,7 @@
 
 A modern, visually stunning landing page for bands and live acts looking to book shows. Built with React, TypeScript, and Tailwind CSS.
 
-![Soul Assembly Hero](assets/preview.png)
+![Soul Assembly Hero](src/assets/preview.png)
 
 ## Features
 
