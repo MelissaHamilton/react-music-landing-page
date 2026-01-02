@@ -1,16 +1,51 @@
-import { Menu, Music } from 'lucide-react';
+import { useState } from 'react';
+import { Menu, Music, X } from 'lucide-react';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const GlassNavbar = () => {
   const navItems = ['Home', 'About', 'Artists', 'Releases', 'Contact'];
+  const [open, setOpen] = useState(false);
 
   return (
     <nav className="fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-50 animate-fade-up-delay-2">
-      <div className="glass rounded-full px-4 sm:px-4 md:px-8 py-3 sm:py-3 md:py-4">
-        <div className="flex items-center gap-4 sm:gap-4 md:gap-8">
-          {/* Menu Icon */}
-          <button className="text-foreground hover:text-primary transition-colors shrink-0">
+      <div className="glass rounded-full px-4 md:px-8 py-3 md:py-4">
+        <div className="flex items-center gap-4 md:gap-8">
+          {/* Mobile Menu with Sheet */}
+          <div className="sm:hidden">
+            <Sheet open={open} onOpenChange={setOpen}>
+              <SheetTrigger asChild>
+                <button className="text-foreground hover:text-primary transition-colors">
+                  <Menu className="w-5 h-5" />
+                </button>
+              </SheetTrigger>
+              <SheetContent side="bottom" className="glass border-t border-border/20 rounded-t-3xl">
+                <div className="flex flex-col items-center gap-4 py-6">
+                  {navItems.map((item, index) => (
+                    <a
+                      key={item}
+                      href={`#${item.toLowerCase()}`}
+                      onClick={() => setOpen(false)}
+                      className={`text-lg font-medium transition-colors ${
+                        index === 0 ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+                      }`}
+                    >
+                      {item}
+                    </a>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+
+          {/* Desktop Menu Icon */}
+          <button className="hidden sm:block text-foreground hover:text-primary transition-colors">
             <Menu className="w-5 h-5" />
           </button>
+
+          {/* Mobile: Show Home */}
+          <a href="#home" className="sm:hidden text-sm font-medium text-foreground">
+            Home
+          </a>
           
           {/* Nav Links - Hidden on mobile, shown on tablet+ */}
           <div className="hidden sm:flex items-center gap-3 md:gap-6">
